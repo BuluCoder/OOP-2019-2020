@@ -4,20 +4,15 @@ public class Cat extends Animal
 {
     private int numLives = 9;
 
-    public void setNumLives(int lives)
+    public void setNumLives(int numlives)
     {
-        this.numLives = lives;
+        this.numLives = numlives;
     }
     public int getNumLives()
     {
         return numLives;
     }
 
-    public void speak()
-    {
-        System.out.println("Meow!");
-    }
-	
 	public void kill()
 	{
 		if (numLives > 0)
@@ -29,4 +24,5 @@ public class Cat extends Animal
 		{
 			System.out.println("Dead");
 		}
+	}
 }

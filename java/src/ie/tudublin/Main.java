@@ -13,6 +13,10 @@ public class Main
         misty.speak();  
 
         Cat topcat = new Cat();
-        topcat.speak();
+        while(topcat.getNumLives() > 0)
+		{
+			topcat.kill();
+		}
+		topcat.kill();
     }
 }
